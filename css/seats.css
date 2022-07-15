@@ -1,0 +1,54 @@
+body {
+    text-align: center;
+    background-color: white;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    margin: auto;
+    height: 500px;
+    width: 1000px;
+}
+
+.containerSeatDisplay {
+    margin: auto;
+    display: grid;
+    width: 300px;
+    border-radius: 8px;
+    row-gap: 10px;
+    background-color: rgba(234, 234, 234, 0.895);
+}
+
+.seatRow {
+    display: inline-grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+}
+
+.seatsLeft {
+    column-gap: 4px;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.seatsRight {
+    column-gap: 4px;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+}
+
+.seat {
+    width: 30px;
+    margin: 0.5em 0 0.5em 0;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 8px;
+    border-color: transparent;
+}

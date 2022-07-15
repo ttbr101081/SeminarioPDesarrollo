@@ -35,7 +35,7 @@
 				<span class="login100-form-title p-b-41">
 					Registrate
 				</span>
-				<form class="login100-form validate-form p-b-33 p-t-5">
+				<form class="login100-form validate-form p-b-33 p-t-5" action="#" method="POST">
 					<div class="wrap-input100 validate-input" data-validate = "Ingresar Nombre">
 						<input class="input100" type="text" name="Nombre" placeholder="Nombre">
 						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
@@ -44,12 +44,12 @@
 					
 
 					<div class="wrap-input100 validate-input" data-validate = "Ingresar Correo">
-						<input class="input100" type="text" name="Correo" placeholder="Correo">
+						<input class="input100" type="email" name="Correo" placeholder="Correo">
 						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Ingresar Contraseña">
-						<input class="input100" type="Contraseña" name="Contraseña" placeholder="Contraseña">
+						<input class="input100" type="password" name="Contrasena" placeholder="Contraseña">
 						<span class="focus-input100" data-placeholder="&#xe80f;"></span>
 					</div>
 
@@ -60,6 +60,26 @@
 					</div>
 
 				</form>
+
+				<?php
+		session_start();
+		require "base/conex.php";
+		if(isset($_POST['Nombre']) && isset($_POST['Correo']) && isset($_POST['Contrasena'])){
+			$nombre = $_POST['Nombre'];
+			$correo = $_POST['Correo'];
+			$_SESSION['email'] = $correo;
+			$pass = $_POST['Contrasena'];
+			if($nombre=="" || $correo == "" || $pass == ""){
+				echo '<script language="javascript">alert("Debe ingresar los datos requeridos");window.location.href="registro.php"</script>'; 
+			}else{
+				$sql = "insert into cliente(nombre, correo, password) values('$nombre', '$correo', '$pass')";
+				$r = mysqli_query($l, $sql) or die ("ERROR al ingresar datos");
+				if($r){
+					echo '<script language="javascript">alert("El registro se realizo correctamente");window.location.href="train.html"</script>'; 
+				}
+			}
+		}
+	?>
 			</div>
 		</div>
 	</div>
@@ -84,5 +104,6 @@
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
+	
 </body>
 </html>

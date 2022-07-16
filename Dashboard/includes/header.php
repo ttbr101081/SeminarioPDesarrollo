@@ -3,7 +3,7 @@
 <html>
 <head>
 
-	<title>Sistema de Gestión de Inventario</title>
+	<title>Sistema de Gestión del Tren</title>
 
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css">
@@ -52,9 +52,9 @@
 
       <ul class="nav navbar-nav navbar-right">                
              
-        <li id="navCategories"><a href="categories.php"> <i class="glyphicon glyphicon-th-list"></i>Categorias</a></li>        
+        <li id="navCategories"><a href="categories.php"> <i class="glyphicon glyphicon-th-list"></i>Tipo de vagon</a></li>        
 
-        <li id="navProduct"><a href="product.php"> <i class="glyphicon glyphicon-ruble"></i> Productos </a></li>     
+        <li id="navProduct"><a href="product.php"> <i class="glyphicon glyphicon-ruble"></i> Trenes </a></li>     
 
         <li id="navReport"><a href="report.php"> <i class="glyphicon glyphicon-check"></i> Reportes </a></li>
 

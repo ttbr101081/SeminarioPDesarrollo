@@ -82,7 +82,7 @@
 				$sql = "insert into cliente(cedula, nombre, correo, password, rol) values('$cedula', '$nombre', '$correo', '$pass', 1)";
 				$r = mysqli_query($l, $sql) or die ("ERROR al ingresar datos");
 				if($r){
-					echo '<script language="javascript">alert("El registro se realizo correctamente");window.location.href="train.html"</script>'; 
+					echo '<script language="javascript">alert("El registro se realizo correctamente");window.location.href="train.php"</script>'; 
 				}
 			}
 		}

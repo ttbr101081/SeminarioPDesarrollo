@@ -67,7 +67,7 @@
 							$r = mysqli_query($l, $sql);
 							$n = mysqli_num_rows($r);
 							if($n == 1){
-								echo '<script language="javascript">alert("Comprobacion existosa");window.location.href="train.html"</script>';
+								echo '<script language="javascript">alert("Comprobacion existosa");window.location.href="train.php"</script>';
 							}else{
 								echo '<script language="javascript">alert("Ayudanos con tu informacion");window.location.href="registro.php"</script>';
 							}

@@ -8,24 +8,27 @@
         $n = mysqli_num_rows($r);
         $mitad = round(($n / 2),0);
         $i=1;
+        $aux=1;
         while($re = mysqli_fetch_object($r)){
             $num = $re -> num;
-            if($i == 1){
+            if($i == 1 && $aux == 1){
                 echo "<div class='seatsLeft'>";
             }elseif($i == 4){
                 echo "</div>";
                 echo "<div class='seatsRight'>";
-                
             }elseif($i == 7){
                 echo "</div>";
-                $i=0;
+                $aux = 2;
             }
-            if($i == 0){
-
+            if($aux == 2){
+                echo "<div class='seatsLeft'>";
+                echo "<button class='seat'>$num</button>";
+                $i=1;
+                $aux = 3;
             }else{
                 echo "<button class='seat'>$num</button>";
+                $aux == 1;
             }
-            
             $i++;
         }
 

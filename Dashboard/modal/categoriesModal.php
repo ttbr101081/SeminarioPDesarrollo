@@ -6,30 +6,34 @@
     	<form class="form-horizontal" id="submitCategoriesForm" action="php_action/createCategories.php" method="POST">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title"><i class="fa fa-plus"></i> Agregar categoría</h4>
+	        <h4 class="modal-title"><i class="fa fa-plus"></i> Agregar tipo de vagon</h4>
 	      </div>
 	      <div class="modal-body">
 
 	      	<div id="add-categories-messages"></div>
 
 	        <div class="form-group">
-	        	<label for="categoriesName" class="col-sm-4 control-label">Nombre: </label>
+	        	<label for="categoriesName" class="col-sm-4 control-label">tipo de vagon: </label>
 	        	<label class="col-sm-1 control-label">: </label>
 				    <div class="col-sm-7">
 				      <input type="text" class="form-control" id="categoriesName" placeholder="Nombre de categoría" name="categoriesName" autocomplete="off">
 				    </div>
-	        </div> <!-- /form-group-->	         	        
-	        <div class="form-group">
-	        	<label for="categoriesStatus" class="col-sm-4 control-label">Estado: </label>
+	        </div> <!-- /form-group-->	 
+			<div class="form-group">
+	        	<label for="categoriesName" class="col-sm-4 control-label">numero de asientos: </label>
 	        	<label class="col-sm-1 control-label">: </label>
 				    <div class="col-sm-7">
-				      <select class="form-control" id="categoriesStatus" name="categoriesStatus">
-				      	<option value="">-- Selecciona --</option>
-				      	<option value="1">Disponible</option>
-				      	<option value="2">No disponible</option>
-				      </select>
+				      <input type="text" class="form-control" id="categoriesName" placeholder="Nombre de categoría" name="categoriesName" autocomplete="off">
 				    </div>
-	        </div> <!-- /form-group-->	         	        
+	        </div> <!-- /form-group-->	        	        
+			<div class="form-group">
+	        	<label for="categoriesName" class="col-sm-4 control-label">precio: </label>
+	        	<label class="col-sm-1 control-label">: </label>
+				    <div class="col-sm-7">
+				      <input type="text" class="form-control" id="categoriesName" placeholder="Nombre de categoría" name="categoriesName" autocomplete="off">
+				    </div>
+	        </div> <!-- /form-group-->	
+	        	         	        
 	      </div> <!-- /modal-body -->
 	      
 	      <div class="modal-footer">
@@ -52,7 +56,7 @@
     	<form class="form-horizontal" id="editCategoriesForm" action="php_action/editCategories.php" method="POST">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title"><i class="fa fa-edit"></i> Editar categoría</h4>
+	        <h4 class="modal-title"><i class="fa fa-edit"></i> Editar tipo de vagon</h4>
 	      </div>
 	      <div class="modal-body">
 
@@ -65,24 +69,27 @@
 
 		      <div class="edit-categories-result">
 		      	<div class="form-group">
-		        	<label for="editCategoriesName" class="col-sm-4 control-label">Nombre: </label>
+		        	<label for="editCategoriesName" class="col-sm-4 control-label">tipo de vagon: </label>
 		        	<label class="col-sm-1 control-label">: </label>
 					    <div class="col-sm-7">
 					      <input type="text" class="form-control" id="editCategoriesName" placeholder="Nombre de categoría" name="editCategoriesName" autocomplete="off">
 					    </div>
-		        </div> <!-- /form-group-->	         	        
-		        <div class="form-group">
-		        	<label for="editCategoriesStatus" class="col-sm-4 control-label">Estado: </label>
+		        </div> <!-- /form-group-->	
+				<div class="form-group">
+		        	<label for="editCategoriesName" class="col-sm-4 control-label">Numero de asientos: </label>
 		        	<label class="col-sm-1 control-label">: </label>
 					    <div class="col-sm-7">
-					      <select class="form-control" id="editCategoriesStatus" name="editCategoriesStatus">
-					      	<option value="">-- Selecciona --</option>
-							<option value="1">Disponible</option>
-							<option value="2">No disponible</option>
-					      </select>
+					      <input type="text" class="form-control" id="editCategoriesName" placeholder="Nombre de categoría" name="editCategoriesName" autocomplete="off">
 					    </div>
-		        </div> <!-- /form-group-->	 
-		      </div>         	        
+		        </div> <!-- /form-group-->         	        
+				<div class="form-group">
+		        	<label for="editCategoriesName" class="col-sm-4 control-label">precio: </label>
+		        	<label class="col-sm-1 control-label">: </label>
+					    <div class="col-sm-7">
+					      <input type="text" class="form-control" id="editCategoriesName" placeholder="Nombre de categoría" name="editCategoriesName" autocomplete="off">
+					    </div>
+		        </div> <!-- /form-group-->
+		        
 		      <!-- /edit brand result -->
 
 	      </div> <!-- /modal-body -->

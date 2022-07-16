@@ -6,12 +6,12 @@
 
 		<ol class="breadcrumb">
 		  <li><a href="dashboard.php">Inicio</a></li>		  
-		  <li class="active">Categorías</li>
+		  <li class="active">Tipo de vagon</li>
 		</ol>
 
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<div class="page-heading"> <i class="glyphicon glyphicon-edit"></i> Listado de categorías</div>
+				<div class="page-heading"> <i class="glyphicon glyphicon-edit"></i> Listado de vagones</div>
 			</div> <!-- /panel-heading -->
 			<div class="panel-body">
 
@@ -24,8 +24,9 @@
 				<table class="table" id="manageCategoriesTable">
 					<thead>
 						<tr>							
-							<th>Nombre</th>
-							<th>Estado</th>
+							<th>Tipo de vagon</th>
+							<th>numero de asientos</th>
+							<th>precio</th>
 							<th style="width:15%;">Opciones</th>
 						</tr>
 					</thead>

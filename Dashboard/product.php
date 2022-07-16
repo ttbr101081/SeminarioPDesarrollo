@@ -7,12 +7,12 @@
 
 		<ol class="breadcrumb">
 		  <li><a href="dashboard.php">Inicio</a></li>		  
-		  <li class="active">Productos</li>
+		  <li class="active">Tren</li>
 		</ol>
 
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<div class="page-heading"> <i class="glyphicon glyphicon-edit"></i> Listado de productos</div>
+				<div class="page-heading"> <i class="glyphicon glyphicon-edit"></i> Listado de trenes</div>
 			</div> <!-- /panel-heading -->
 			<div class="panel-body">
 
@@ -25,14 +25,11 @@
 				<table class="table" id="manageProductTable">
 					<thead>
 						<tr>
-						<th>ID producto</th>
-						<th style="width:10%;">Imagen</th>
-						<th>Nombre del producto</th>
-							
-							<th>Categoria</th>
+						<th>ID tren</th>
+						<th>Destino del tren de tren</th>
+							<th>tipo de vagon</th>
 							<th>Estado</th>
-							<th>Favorito</th>
-							
+							<th>horario</th>
 							<th style="width:15%;">Opciones</th>
 						</tr>
 					</thead>

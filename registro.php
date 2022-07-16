@@ -36,6 +36,12 @@
 					Registrate
 				</span>
 				<form class="login100-form validate-form p-b-33 p-t-5" action="#" method="POST">
+
+					<div class="wrap-input100 validate-input" data-validate = "Ingresar Cedula">
+						<input class="input100" type="text" name="Cedula" placeholder="Cedula">
+						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
+					</div>
+
 					<div class="wrap-input100 validate-input" data-validate = "Ingresar Nombre">
 						<input class="input100" type="text" name="Nombre" placeholder="Nombre">
 						<span class="focus-input100" data-placeholder="&#xe82a;"></span>
@@ -64,15 +70,16 @@
 				<?php
 		session_start();
 		require "base/conex.php";
-		if(isset($_POST['Nombre']) && isset($_POST['Correo']) && isset($_POST['Contrasena'])){
+		if(isset($_POST['Cedula']) && isset($_POST['Nombre']) && isset($_POST['Correo']) && isset($_POST['Contrasena'])){
+			$cedula = $_POST['Cedula'];
 			$nombre = $_POST['Nombre'];
 			$correo = $_POST['Correo'];
 			$_SESSION['email'] = $correo;
 			$pass = $_POST['Contrasena'];
-			if($nombre=="" || $correo == "" || $pass == ""){
+			if($cedula=="" || $nombre=="" || $correo == "" || $pass == ""){
 				echo '<script language="javascript">alert("Debe ingresar los datos requeridos");window.location.href="registro.php"</script>'; 
 			}else{
-				$sql = "insert into cliente(nombre, correo, password) values('$nombre', '$correo', '$pass')";
+				$sql = "insert into cliente(cedula, nombre, correo, password, rol) values('$cedula', '$nombre', '$correo', '$pass', 1)";
 				$r = mysqli_query($l, $sql) or die ("ERROR al ingresar datos");
 				if($r){
 					echo '<script language="javascript">alert("El registro se realizo correctamente");window.location.href="train.html"</script>'; 

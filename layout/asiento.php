@@ -24,10 +24,9 @@
                 echo "<div class='seatsLeft'>";
                 echo "<button class='seat'>$num</button>";
                 $i=1;
-                $aux = 3;
+                $aux = 1;
             }else{
                 echo "<button class='seat'>$num</button>";
-                $aux == 1;
             }
             $i++;
         }

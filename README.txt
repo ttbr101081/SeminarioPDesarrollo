@@ -1,3 +1,10 @@
+Integrantes:
+Diego Sulca
+Suany Chalan
+Rodrigo Terán
+Richard Casa
+David Caicedo
+
 INGRESAR A LA CARPETA BASE SE ENCONTRARA EL ARCHIVO SQL 
 LAS CREDENCIALES SON 
 usuario: david@gmail.com (administrador)
